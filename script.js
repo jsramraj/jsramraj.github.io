@@ -5,9 +5,9 @@ const projects = {
       "eFleetSuite is a complete ELD solution offered by Trimble. In the US and Canada, regulations limit driver hours and this solution tracks/report violations. This app was developed in Xamarin-Android and communicates with partner apps via intents.",
     tags: "Android · Xamarin Native · Xamarin Android · Xamarin · SQLite · C#",
     images: [
-      "dist/img/carousel/efleetsuite-1.png",
-      "dist/img/carousel/efleetsuite-2.png",
-      "dist/img/carousel/efleetsuite-3.jpeg"
+      "img/carousel/efleetsuite-1.png",
+      "img/carousel/efleetsuite-2.png",
+      "img/carousel/efleetsuite-3.jpeg"
     ]
   },
   "project-2": {
@@ -16,9 +16,9 @@ const projects = {
       "Trimble Ag Mobile is used for precision farming. Farmers can manage field operations, overlays, weather, and fleet workflows.",
     tags: "iOS · Xamarin Native · Xamarin iOS · Xamarin · SQLite · C# · Agile",
     images: [
-      "dist/img/carousel/tam-1.jpeg",
-      "dist/img/carousel/tam-2.png",
-      "dist/img/carousel/tam-3.webp"
+      "img/carousel/tam-1.jpeg",
+      "img/carousel/tam-2.png",
+      "img/carousel/tam-3.webp"
     ]
   },
   "project-3": {
@@ -26,7 +26,7 @@ const projects = {
     description:
       "Phonetic Keyboard is a custom keyboard extension for iOS with multiple keyboard layouts for language phonetics.",
     tags: "iOS · Objective-C · Extension · iPhone · iPad",
-    images: ["dist/img/carousel/ipa-keyboard-1.png"]
+    images: ["img/carousel/ipa-keyboard-1.png"]
   },
   "project-4": {
     title: "AlcoChange",
@@ -34,9 +34,9 @@ const projects = {
       "AlcoChange helps users track alcohol consumption and connect with a breathalyser accessory. Built in Objective-C using audio framework communication.",
     tags: "iOS · Objective-C · iPhone · Healthcare · Agile",
     images: [
-      "dist/img/carousel/alcochange-1.png",
-      "dist/img/carousel/alcochange-2.png",
-      "dist/img/carousel/alcochange-3.png"
+      "img/carousel/alcochange-1.png",
+      "img/carousel/alcochange-2.png",
+      "img/carousel/alcochange-3.png"
     ]
   },
   "project-5": {
@@ -45,10 +45,10 @@ const projects = {
       "Blue Dot Parking helps users discover and reserve nearby parking. BLE and activity detection support entry/exit and parking duration workflows.",
     tags: "iOS · Objective-C · iPhone · iPad",
     images: [
-      "dist/img/carousel/bdp-1.webp",
-      "dist/img/carousel/bdp-2.webp",
-      "dist/img/carousel/bdp-3.webp",
-      "dist/img/carousel/bdp-4.webp"
+      "img/carousel/bdp-1.webp",
+      "img/carousel/bdp-2.webp",
+      "img/carousel/bdp-3.webp",
+      "img/carousel/bdp-4.webp"
     ]
   },
   "project-6": {
@@ -57,9 +57,9 @@ const projects = {
       "PalmAgent provides real-estate estimation and field tools. I worked on iOS and Mac implementations.",
     tags: "iOS · iPhone · Mac · iPad · Objective-C",
     images: [
-      "dist/img/carousel/palmagent-1.jpeg",
-      "dist/img/carousel/palmagent-2.jpeg",
-      "dist/img/carousel/palmagent-3.jpg"
+      "img/carousel/palmagent-1.jpeg",
+      "img/carousel/palmagent-2.jpeg",
+      "img/carousel/palmagent-3.jpg"
     ]
   }
 };
@@ -144,4 +144,3 @@ modal.addEventListener("click", (event) => {
   }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
