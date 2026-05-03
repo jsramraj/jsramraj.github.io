@@ -125,8 +125,13 @@ p {
   color: var(--muted);
 }
 
-.timeline,
-.grid-3 {
+.section-note {
+  margin-top: -0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.timeline {
   display: grid;
   gap: 1rem;
 }
@@ -200,32 +205,46 @@ p {
   font-size: 0.98rem;
 }
 
-.grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.compact p {
-  margin: 0.5rem 0 0;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.contact-grid a {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.75rem;
-  background: var(--surface);
-  color: var(--muted);
-}
-
 .footer {
   border-top: 1px solid var(--border);
   padding: 1.4rem;
   text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface);
+  transition: transform 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.footer-links a:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.footer-links svg {
+  width: 19px;
+  height: 19px;
 }
 
 .modal {
@@ -272,8 +291,7 @@ p {
 }
 
 @media (max-width: 900px) {
-  .projects-grid,
-  .grid-3 {
+  .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -284,9 +302,7 @@ p {
     gap: 0.8rem;
   }
 
-  .projects-grid,
-  .grid-3,
-  .contact-grid {
+  .projects-grid {
     grid-template-columns: 1fr;
   }
 
