@@ -7,9 +7,12 @@ A modern, build-free static portfolio for GitHub Pages.
 - `index.html` - main page
 - `styles.css` - site styling
 - `script.js` - project modal interactions
+- `favicon.png` - site favicon at root
 - `dist/img` - reused image assets
 - `dist/docs/Ramaraj-Resume.pdf` - reused resume
 - `CNAME` - custom domain mapping
+
+Legacy webpack/source files and npm package files were removed because this site is now fully static.
 
 ## Deploy on GitHub Pages
 
