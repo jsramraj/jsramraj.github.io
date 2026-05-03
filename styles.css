@@ -143,6 +143,21 @@ p {
   padding: 1rem;
 }
 
+.card-link {
+  display: block;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+.card-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
 .card h3 {
   margin: 0;
   font-size: 1rem;
@@ -203,6 +218,53 @@ p {
   margin: 0;
   padding: 0.8rem;
   font-size: 0.98rem;
+}
+
+.feature-image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.5rem min(5%, 80px);
+  max-width: 960px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+
+.feature-row:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.feature-row:nth-child(even) {
+  background: var(--surface);
+}
+
+.feature-row .feature-image {
+  height: min(72vh, 680px);
+  width: 100%;
+}
+
+.feature-content h3 {
+  margin-top: 0;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+
+.feature-content p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  line-height: 1.75;
 }
 
 .footer {
@@ -293,6 +355,17 @@ p {
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 5%;
+  }
+
+  .feature-row .feature-image {
+    height: auto;
+    max-height: 60vh;
   }
 }
 
