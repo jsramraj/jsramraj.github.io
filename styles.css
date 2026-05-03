@@ -1,0 +1,297 @@
+:root {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --surface-2: #19243b;
+  --text: #e5ebf5;
+  --muted: #a8b3c7;
+  --primary: #4f8cff;
+  --border: #2a3651;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: radial-gradient(circle at 15% 0%, #1e2f58 0%, var(--bg) 45%);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.topbar-links {
+  display: flex;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.hero-content {
+  text-align: center;
+  padding: 3.5rem 0 4rem;
+}
+
+.avatar {
+  width: 140px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--surface-2);
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 600;
+  margin: 1rem 0 0;
+}
+
+h1 {
+  margin: 0.4rem 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-muted {
+  background: var(--surface);
+  border-block: 1px solid var(--border);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+p {
+  color: var(--muted);
+}
+
+.timeline,
+.grid-3 {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-head {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.card-head img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card ul {
+  margin: 0.5rem 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.chips {
+  color: #c4d2ec;
+  font-size: 0.92rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 0;
+  padding: 0.8rem;
+  font-size: 0.98rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.compact p {
+  margin: 0.5rem 0 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.contact-grid a {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.modal {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  width: min(760px, 94%);
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  position: relative;
+  padding: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  border: none;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+#modal-image {
+  width: 100%;
+  border-radius: 10px;
+  max-height: 420px;
+  object-fit: contain;
+  background: #0b1220;
+}
+
+.gallery-controls {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .projects-grid,
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .projects-grid,
+  .grid-3,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
