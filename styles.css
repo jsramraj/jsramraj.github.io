@@ -84,6 +84,20 @@ h1 {
   margin: 0 auto;
 }
 
+.why {
+  margin-left: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 16px 0 0 0;
+  cursor: pointer;
+  font-size: 1.08em;
+  display: inline-block;
+  max-width: 680px;
+}
+
 .hero-actions {
   margin-top: 1.5rem;
   display: flex;
