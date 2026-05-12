@@ -35,13 +35,26 @@ a {
 .hero {
   background: radial-gradient(circle at 15% 0%, #1e2f58 0%, var(--bg) 45%);
   border-bottom: 1px solid var(--border);
+  padding-top: 4.25rem;
 }
 
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding-inline: max(4%, calc((100vw - 1080px) / 2));
+  z-index: 1000;
+  background: rgba(11, 18, 32, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
 }
 
 .brand {
