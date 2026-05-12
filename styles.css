@@ -192,6 +192,31 @@ p {
   background: #fff;
 }
 
+.tool-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.tool-card-top .card-head {
+  flex: 1;
+}
+
+.tool-open-icon {
+  min-width: 40px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem;
+}
+
+.tool-open-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
 .card ul {
   margin: 0.5rem 0;
   padding-left: 1.1rem;
@@ -435,6 +460,11 @@ p {
   .topbar {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .tool-card-top {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .projects-grid {
