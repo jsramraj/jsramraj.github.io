@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Availability Viewer | Google Calendar</title>
+    <meta
+      name="description"
+      content="Team Availability Viewer for Google Calendar helps teams see leave, WFH, and availability without cluttering personal calendars."
+    />
+    <link rel="icon" href="../../favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <style>
+      body {
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      }
+
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .topbar.container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0.9rem max(4%, calc((100vw - 1080px) / 2));
+      }
+
+      .hero-view {
+        background: radial-gradient(circle at 12% 0%, #20355f 0%, var(--bg) 42%);
+        border-bottom: 1px solid var(--border);
+        padding: 42px 0 36px;
+        text-align: center;
+      }
+
+      .logo {
+        width: 92px;
+        height: 92px;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 1px solid var(--border);
+        background: #ffffff;
+      }
+
+      h1 {
+        margin: 14px 0 10px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        max-width: 760px;
+        margin: 0 auto;
+      }
+
+      .content {
+        padding: 42px 0;
+      }
+
+      .content p {
+        max-width: 860px;
+      }
+
+      .availability-list {
+        margin: 18px 0 24px;
+        padding-left: 20px;
+      }
+
+      .availability-list li {
+        color: var(--text);
+        margin-bottom: 10px;
+      }
+
+      .note-card {
+        background: var(--surface-2);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+      }
+
+      .media-section {
+        margin-top: 28px;
+      }
+
+      .media-title {
+        margin: 0 0 12px;
+        font-size: 1.3rem;
+      }
+
+      .video-wrap {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--surface-2);
+      }
+
+      .video-ratio {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+      }
+
+      .video-ratio iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .screenshot-card {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px;
+        background: var(--surface-2);
+      }
+
+      .screenshot-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="topbar container"></nav>
+      <div class="hero-view">
+        <div class="container">
+          <img src="../team-availability-viewer/team-availability-viewer.png" alt="Team Availability Viewer logo" class="logo" />
+          <p class="eyebrow">Google Calendar Extension</p>
+          <h1>Team Availability Viewer</h1>
+          <p class="subtitle">Team Availability View for Google Calendar | See Leave and WFH Without Calendar Clutter</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="container">
+        <p>
+          Many teams use a shared Google Calendar to track leave, work-from-home (WFH), and out-of-office (OOO) events.
+          It works well, but as teams grow, these events can quickly clutter the calendar and make it difficult to focus on your own schedule.
+        </p>
+
+        <p>
+          <strong>Team Availability Viewer</strong> solves this by presenting your team's availability in a clean, compact view.
+          With a single click, you can quickly see:
+        </p>
+
+        <ul class="availability-list">
+          <li>Who is on leave</li>
+          <li>Who is working from home</li>
+          <li>Who is available</li>
+        </ul>
+
+        <div class="note-card">
+          <p>
+            No more scrolling through dozens of all-day events just to find out who is away.
+            If your organization uses shared Google Calendars for team availability, this extension helps you keep the same visibility while reducing calendar clutter.
+          </p>
+        </div>
+
+        <section class="media-section" aria-label="Walkthrough video">
+          <h2 class="media-title">YouTube Walkthrough</h2>
+          <div class="video-wrap">
+            <div class="video-ratio">
+              <iframe
+                src="https://www.youtube.com/embed/S1SCnTZOygs"
+                title="Team Availability Viewer walkthrough"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="media-section" aria-label="App screenshot">
+          <h2 class="media-title">Screenshot</h2>
+          <div class="screenshot-card">
+            <img
+              src="./team-availability-viewer-screenshot.png"
+              alt="Team Availability Viewer screenshot"
+            />
+          </div>
+        </section>
+
+        <section class="media-section" aria-label="Legal links">
+          <div class="hero-actions">
+            <a class="btn" href="privacy.html">Privacy Policy</a>
+            <a class="btn" href="terms.html">Terms of Service</a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="/components.js"></script>
+  </body>
+</html>
